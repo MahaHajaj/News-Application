@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_order_by_labels">
+        <item>@string/settings_order_by_published_label</item>
+        <item>@string/settings_order_by_popularity</item>
+    </string-array>
+
+        <string-array name="settings_order_by_values">
+            <item>@string/settings_order_by_published_value</item>
+            <item>@string/settings_order_by_popularity_value</item>
+        </string-array>
+
+    <string-array name="settings_sources_label">
+        <item>@string/settings_source_google_news</item>
+        <item>@string/settings_source_BBC</item>
+        <item>@string/settings_source_ABC</item>
+        <item>@string/settings_source_Aftenposten</item>
+        <item>@string/settings_source_CNN</item>
+        <item>@string/settings_source_Fox</item>
+    </string-array>
+
+    <string-array name="settings_sources_value">
+        <item>@string/settings_source_google_news_value</item>
+        <item>@string/settings_source_BBC_value</item>
+        <item>@string/settings_source_ABC_value</item>
+        <item>@string/settings_source_Aftenposten_value</item>
+        <item>@string/settings_source_CNN_value</item>
+        <item>@string/settings_source_Fox_value</item>
+    </string-array>
+
+
+
+</resources>

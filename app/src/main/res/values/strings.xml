@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="name">Name</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_link_signup">Sign Up</string>
+    <string name="date">Date :</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_order_by_key" translatable="false">sortBy</string>
+    <string name="settings_order_by_label">Order By</string>
+
+    <string name="settings_order_by_default">Published</string>
+
+    <string name="settings_order_by_published_label">Published</string>
+    <string name="settings_order_by_published_value" translatable="false">published</string>
+
+
+    <string name="settings_order_by_popularity">Popularity</string>
+    <string name="settings_order_by_popularity_value" translatable="false">popularity</string>
+    <string name="signin">Log In /Sign Up</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="settings_sources_name" translatable="false">Source Name</string>
+    <string name="settings_sources_name_default" translatable="false">google-news</string>
+
+    <string name="settings_source_google_news">google news</string>
+    <string name="settings_source_BBC">BBC news</string>
+    <string name="settings_source_ABC">ABC news</string>
+    <string name="settings_source_CNN">CNN news</string>
+    <string name="settings_source_Fox">Fox news</string>
+    <string name="settings_source_Aftenposten">Aftenposten</string>
+    <string name="settings_source_google_news_value">google-news</string>
+    <string name="settings_source_BBC_value">bbc-news</string>
+    <string name="settings_source_ABC_value">abc-news</string>
+    <string name="settings_source_Aftenposten_value">aftenposten</string>
+    <string name="settings_source_CNN_value">cnn</string>
+    <string name="settings_source_Fox_value">fox-news</string>
+    <string name="settings_source_name" translatable="false">sources</string>
+    <string name="btn_forgot_password">Forget password ?</string>
+    <string name="news">News</string>
+    <string name="enter_email">Please enter email</string>
+    <string name="enter_password">Please enter password!</string>
+    <string name="login_successful">Login successful!</string>
+    <string name="login_failed">Login failed! Please try again later</string>
+    <string name="authentication_failed">Authentication failed.</string>
+    <string name="signup_successful">createUserWithEmail:onComplete:</string>
+    <string name="sign_out">sign out</string>
+    <string name="login_or_signup">Log In/Sign Up</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.maha_h.newsapp.MainActivity">
+    <item
+        android:id="@+id/sign"
+        android:title="@string/signin"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/bookmark"
+        android:title="@string/bookmark"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings_menu_item"
+        app:showAsAction="never" />
+
+</menu>
