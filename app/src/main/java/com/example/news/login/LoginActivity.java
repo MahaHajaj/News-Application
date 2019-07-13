@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +17,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -88,8 +91,17 @@ public class LoginActivity extends AppCompatActivity {
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(intent);
                         } else {
-                            Toast.makeText(getApplicationContext(), R.string.login_failed, Toast.LENGTH_LONG).show();
-                        }
+                            try {
+                                throw task.getException();
+                            } catch(FirebaseAuthInvalidCredentialsException e) {
+                                editTextEmail.setError(getString(R.string.error_invalid_email));
+                                editTextEmail.requestFocus();
+                            } catch(FirebaseAuthUserCollisionException e) {
+                                editTextEmail.setError(getString(R.string.error_user_exists));
+                                editTextEmail.requestFocus();
+                            } catch(Exception e) {
+                                Log.e("log", e.getMessage());
+                            }                        }
                     }
                 });
     }

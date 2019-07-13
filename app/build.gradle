@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            storeFile file('keystores/keystore')
+            storePassword 'QWEfgh'
+            keyAlias = 'key0'
+            keyPassword 'QWEfgh'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.news"
@@ -9,6 +17,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
@@ -16,6 +25,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
