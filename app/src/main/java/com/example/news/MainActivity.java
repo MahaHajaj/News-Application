@@ -62,7 +62,10 @@ public class MainActivity extends AppCompatActivity implements newsAdapter.Adapt
 
         final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         DividerItemDecoration itemDecor = new DividerItemDecoration(newsList.getContext(), linearLayoutManager.getOrientation());
-
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+             Intent intent = new Intent(this,LoginActivity.class);
+             startActivity(intent);
+        } else {
             database = FirebaseDatabase.getInstance();
             myRef = database.getReference(FirebaseAuth.getInstance().getCurrentUser().getUid());
             myRef.child("bookmark").addValueEventListener(new ValueEventListener() {
@@ -86,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements newsAdapter.Adapt
             newsList.addItemDecoration(itemDecor);
 
         }
-
+    }
 
     public void news() {
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);

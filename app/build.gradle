@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            storeFile file('keystores/keystore')
+            storeFile file('keystores/keystores')
             storePassword 'QWEfgh'
             keyAlias = 'key0'
             keyPassword 'QWEfgh'
