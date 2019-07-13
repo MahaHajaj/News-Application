@@ -48,4 +48,6 @@
     <string name="signup_successful">createUserWithEmail:onComplete:</string>
     <string name="sign_out">sign out</string>
     <string name="login_or_signup">Log In/Sign Up</string>
+    <string name="error_invalid_email">Invalid email</string>
+    <string name="error_user_exists">Email already exists</string>
 </resources>
